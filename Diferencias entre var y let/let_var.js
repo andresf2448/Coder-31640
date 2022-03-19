@@ -4,11 +4,11 @@ let x = 'var';
 console.log(x); */
 
 /* if(true){
-  let x = true;
+  var x = true;
 }
 
-console.log(x);
- */
+console.log(x); */
+
 
 //let y const: ambito de bloque
 /* console.log(x);
