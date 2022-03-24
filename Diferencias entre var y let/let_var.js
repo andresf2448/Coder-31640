@@ -56,9 +56,9 @@ console.log(x); */
   }
 } */
 
-/* for (var i=0; i < 2; ++i) {
+/* for (let i=0; i < 2; ++i) {
   console.log('Primer', i);
-  for (var i=0; i < 2; ++i) {
+  for (let i=0; i < 2; ++i) {
       console.log('Segundo', i);
   }
 } */
