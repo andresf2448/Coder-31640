@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Camada 31640</title>
+  </head>
+  <body onload="mostrarReloj()">
+    <h1 style="background-color:rgb(0, 119, 255)" class="text-center p-3">Reloj Digital</h1>
+    <div class="container mb-5">
+        <div id="reloj">
+            <div class="reloj-contenedor" id="contenedor">
+                <div id="hora"></div>
+                <div id="fecha">JavaScript</div>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="background-color:rgb(0, 119, 255)" class="text-center p-3">Sistema de tienda</h1>
+    <div class="container mt-4">
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Apps [TUTOR]LuisSalinas</span>
+        </nav>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Agregar Nuevo Libro</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="formulario">
+                            <div class="form-group mb-4">
+                                <input type="text" id="titulo" class="form-control" placeholder="Ingresar Titulo">
+                            </div>
+                            <div class="form-group mb-4">
+                                <textarea id="descripcion" type="text" class="form-control"
+                                    placeholder="Ingresar descripcion"></textarea>
+                            </div>
+                            <div class="form group mb-4">
+                                <input type="number" id="precio" class="form-control" placeholder="Ingresar precio">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Agregar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Titulo</th>
+                            <th scope="col">Descripcion</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr>
+                            <td>EL gran libro de javascript</td>
+                            <td>El mejor libro de todos</td>
+                            <td>3000</td>
+                            <td><button class="btn btn-warning">Editar</button></td>
+                            <td><button class="btn btn-danger">Eliminar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <h1 style="background-color:rgb(0, 119, 255)" class="text-center p-3">Carrito de compras</h1>
+    <div class="container" id="tienda">
+
+    </div>
+
+    <h3 class="text-center class mt-5 mb-5">Carrito de compra</h3>
+    <div id="carrito" class="container mt-5">
+
+    </div>
+
+    <div>
+        <!-- Button trigger modal -->
+        <div id="btn-compra">
+
+        </div>
+        <!-- Modal -->
+        <div id="contenedorModal">
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/reloj.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/carrito.js"></script>
+  </body>
+</html>
