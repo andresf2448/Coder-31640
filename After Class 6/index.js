@@ -23,3 +23,12 @@ function eliminar(id, nombreArreglo){
   listaProductos = listaProductos.filter(elemento => elemento.id != id);
   localStorage.setItem(nombreArreglo, JSON.stringify(listaProductos));
 }
+
+function agregar(nombre, nombreArreglo){
+  let listaProductos = JSON.parse(localStorage.getItem(nombreArreglo));
+
+  let productico = {id: listaProductos.lenght + 1, producto: nombre};
+  listaProductos.push(productico);
+
+  localStorage.setItem(nombreArreglo, JSON.stringify(listaProductos));
+}
